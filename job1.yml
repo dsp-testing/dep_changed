@@ -1,0 +1,18 @@
+job:
+  dependencies:
+  - path-to-regexp
+  security-advisories:
+  - dependency-name: path-to-regexp
+    affected-versions:
+    - '>= 0, < 0.1.10'
+    - '>= 0.2.0, < 8.0.0'
+  security-updates-only: true
+  commit-message-options:
+    prefix: '[SECURITY] '
+  source:
+    directories:
+    - /
+    provider: github
+    repo: brettfo/dependabot-npm-closing
+    branch: main
+  package-manager: npm_and_yarn
